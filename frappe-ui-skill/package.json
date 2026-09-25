@@ -1,0 +1,12 @@
+{
+  "name": "frappe-ui-skill",
+  "version": "1.0.0",
+  "description": "Agent skill for building Vue 3 UIs with frappe-ui: verified component API reference, design tokens, and a markup auditor.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-reference.mjs data/matrix.json references && node scripts/build-tokens.mjs data/tokens.json references",
+    "audit": "node scripts/audit-markup.mjs"
+  },
+  "license": "MIT"
+}
